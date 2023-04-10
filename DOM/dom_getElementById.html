@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> DOM Style </title>
+		<meta charset = "UTF-8">
+	</head>
+<body>
+	<p id="p1">paragraph 1: Hello World!</p>
+	<p id="p2">paragraph 2: Hello World!</p>
+
+	<script>
+		// var p2=document.querySelector(#p2);
+		var p2 = document.getElementById("p2");
+		p2.setAttribute("style", "color: blue;");
+		p2.style.fontFamily = "Arial";
+		p2.style.fontSize="20px";
+		p2.style.width = "30%";
+		p2.style.border = "1px red solid";
+	</script>
+
+	<p>The paragraph above was changed by a script.</p>
+
+</body>
+</html>

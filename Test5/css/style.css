@@ -1,0 +1,29 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "LucidaSans Unicode", Geneva, Verdana, sans-serif;
+    background-color: rgb(228, 231, 231);
+}
+.container {
+    width: 70%;
+    margin: auto;
+}
+.hightlight {
+    color: #831515;
+    background-color: #76a3f6;
+}
+
+h2, h3 {
+    color: brown;
+}
+
+p {
+    font-size: 18px;
+}
+footer {
+    color: #c3bebe;
+    background-color: #3c3838;
+}
+a:hover {
+    font-size: 20px;
+    background-color: #ec4ac9;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Mouse Over </title>
+   <meta charset="UTF-8">
+</head>
+<body>
+	<div onmouseover="mOver(this)" onmouseout="mOut(this)"
+		 style="background-color:blue;width:120px;height:20px;padding:40px;">
+		 Mouse Over Me
+	</div>
+	<script>
+	function mOver(obj)
+	{
+		obj.innerHTML="Thank You";
+		obj.style.background="pink";
+	}
+
+	function mOut(obj)
+	{
+		obj.innerHTML="Mouse Over Me";
+		obj.style.background = "yellow";
+	}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <script src="./js/event_click.js">   
+    </script>
+    <script>
+      function changeText(id)
+      {
+        id.innerHTML="Ooops!";
+        }
+    </script>
+  </head>
+  <body>
+    <h1 id="id1">My Heading 1</h1>
+    <button type="button"
+        onclick="document.getElementById('id1').style.color='red'">
+        Click Me
+    </button>
+    <h1 onclick="changeText(this)">Click on this text!</h1>
+    <button id="myBtn">What's the time?</button>
+    <mark id = "demo"></mark>
+  </body>
+</html>

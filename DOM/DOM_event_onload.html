@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Event Example </title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+  <h3> Beautiful picture</h3>
+  <img id = "pic" src ="./pic1.jpg" style="width:200px; height:200px" alt="Beautiful Picture"> 
+  <div id="container">
+  </div>
+  <script>
+    /* window.onload = document.querySelector("#container").innerHTML = 
+      "<h3> Heading 3 </h3> " +
+      "<p> This is a paragraph set by script </p>";  */
+      window.addEventListener('DOMContentLoaded', function(){
+        document.querySelector("#container").innerHTML = 
+      "<h3> Heading 3 </h3> " +
+      "<p> This is a paragraph set by script </p>";
+      });
+      // test error event 
+      var pic = document.querySelector("#pic");
+      pic.onload = function(){
+        console.log("image picture loaded successfully.")
+      }
+      pic.onerror = function(){
+        console.error("image picture error.");
+      }
+
+ </script>
+</body>
+</html>

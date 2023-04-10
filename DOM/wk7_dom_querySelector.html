@@ -1,0 +1,47 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8" />
+    <title>DOM - Creating New Elemen</title>
+    <style> 
+       body { margin: 0 18%; }
+    </style>
+    <script>
+     function decorate(){
+        var container = document.querySelector("#address"); 
+        container.style.border= "2px dotted red";
+       var onePara = container.querySelector("p"); //one para IN container
+        onePara.style.background = "yellow";
+     }
+     function decorateAll(){
+        var container = document.querySelector("#address"); 
+        var addrParas = container.querySelectorAll("p"); //all paras IN container
+       // var addrParas = document.querySelectorAll("p"); //all paras IN document
+        // highlight paragraphs inside the div element 
+        for (var i = 0; i < addrParas.length; i++) {   
+                addrParas[i].style.backgroundColor = "yellow"; 
+                addrParas[i].style.color = "blue"; 
+        }
+     }
+    </script>
+ </head>
+ <body>
+         <article>
+         <section>
+                 This is a section. <br>
+                 More text...
+         </section>
+        </article>
+        <hr>
+    <p>Mail to: </p> 
+    <div id="address"> 
+            <p>70 The Pond Road</p> 
+            <p>Toronto, ON</p>
+    </div>
+    <p> This is a paragraph out of div </p>
+   <button onclick="decorate();"> Decorate </button>
+   <hr>
+   <p onclick="decorateAll();" > Click to decorate All </p>
+ </body>
+ </html>

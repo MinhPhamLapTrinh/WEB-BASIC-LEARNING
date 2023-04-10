@@ -1,0 +1,60 @@
+/* body
+{
+    background-image: url(../hero.jpg);
+    background-color: aquamarine;
+} */
+
+/* Box model 
+Everything on the page is a box.
+Box has four sides, clockwise:
+    top, bottom, right, left
+*/
+.container {
+  width: 80%;
+  margin: auto;
+  /* background-image: url(../hero.jpg); */
+  background-image: url(https://www.senecacollege.ca/content/dam/projects/seneca/seneca-logo.svg);
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-color: rgb(241, 175, 186);
+  border: solid rgb(8, 7, 7) 5px;
+  padding: 5px;
+}
+/* if we don't know what to do make a class */
+.div2 {
+  color: white;
+  width: 80%;
+  margin: auto;
+  background-color: rgb(152, 180, 153);
+  border: solid rgb(255, 227, 12) 15px; /*The same with the underneath*/
+  /* border-style: dotted;
+    border-width: 15px;
+    border-color: rgb(255, 227, 12); */
+  background-image: url(../hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-left-color: blueviolet;
+  border-right-color: crimson;
+
+  text-align: center;
+}
+p {
+  color: black;
+}
+.logo {
+    width: 100px;
+    border: groove yellow 5px;
+    border-radius: 30%;
+}
+.hero {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+    border: solid blue 5px;
+    border-radius: 20%;
+}
+.logo:hover {
+    background-color: aquamarine;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/test7.css">
+</head>
+
+<body>
+    <h2>Declaration:</h2>
+    <p>
+        I declare that this test is my own work in accordance with Seneca Academic Policy. <br>
+        No part of this assignment has been copied manually or electronically from any other source <br>
+        (including web sites) or distributed to other students.<br>
+        Name:<u>Duc Minh Pham</u> Student ID: <u>10305524</u></span>
+    </p>
+    <hr>
+    <form name="info" method="post" action="https://httpbin.org/post">
+        <label for="fullName">
+            <span style="color:red">*</span>
+            Full Name:
+        </label>
+        <input type="text" name="fullName" id="fullName" placeholder="LastName, FirstName" required>
+        <br><br>
+        <label for="program">Program: </label>
+        <select name="program" id="program">
+            <option value="0">Select a program</option>
+            <option value="BSD">BSD</option>
+            <option value="IFS">IFS</option>
+            <option value="CPA">CPA</option>
+        </select>
+        <br><br>
+        <label for="hobby">My Hobbies: </label>
+        <input type="checkbox" name="hobby" id="reading" value="reading" checked>
+        <label for="reading">reading</label>
+        <input type="checkbox" name="hobby" id="Swimming" value="Swimming">
+        <label for="Swimming">Swimming</label>
+        <input type="checkbox" name="hobby" id="Travelling" value="Travelling">
+        <label for="Travelling">Travelling</label>
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+
+</html>

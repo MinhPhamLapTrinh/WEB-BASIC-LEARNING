@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <title>DOM - Creating New Elemen</title>
+   <style> 
+      body { margin: 0 18%; }
+   </style>
+   <script>
+    function addHeading(){
+       var heading = document.createElement("h1");
+       var heading_text = document.createTextNode("Large Heading!");
+       heading.appendChild(heading_text);
+       document.body.appendChild(heading);	
+	}
+	
+	function addButton(){
+	   var aBox = document.querySelector("#aBox");
+	   var button = document.createElement("button");
+	   var t = document.createTextNode("Dynamic Button");
+	   button.appendChild(t);
+	   aBox.appendChild(button);
+	}
+   </script>
+</head>
+<body>
+   <h1>HTML DOM - Creating New Element</h1>
+   <input type="button" onclick="addHeading()" value="Add Heading">&nbsp;&nbsp;&nbsp;
+	<input type="button" onclick="addButton()" value="Add Button">
+  <div id="aBox" style="background-color: lightblue; width: 200; height: 100px;">
+  
+  </div>
+
+  
+</body>
+
+</html>

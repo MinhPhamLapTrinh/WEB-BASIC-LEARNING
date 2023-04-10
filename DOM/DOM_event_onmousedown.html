@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Mouse Down </title>
+		<meta charset = "UTF-8">
+	</head>
+<body>
+	<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+		 style="background-color:blue;width:90px;height:20px;padding:40px;">
+		 Click Me
+	</div>
+	<script>
+		function mDown(obj)
+		{
+			obj.style.backgroundColor="pink";
+			obj.innerHTML="Release Me"
+		}
+		function mUp(obj)
+		{
+			obj.style.backgroundColor="green";
+			obj.innerHTML="Thank You"
+		}
+	</script>
+
+</body>
+</html>

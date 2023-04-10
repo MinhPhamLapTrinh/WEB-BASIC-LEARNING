@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Mouse move </title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h3> move your mouse around, I'll tell you the mouse position :)</h3>
+    <p> Mouse position (x,y): 
+        (<span id="mouse-X"> </span>, <span id="mouse-Y"> </span>)
+    </p> 
+    <script>
+        window.addEventListener("load", function(){
+            document.body.onmouseover = function(evt){
+                let mouseX = document.querySelector("#mouse-X");
+                let mouseY = document.querySelector("#mouse-Y");
+                
+                mouseX.innerHTML = evt.clientX;
+                mouseY.innerText = evt.clientY;
+            }; //body.onmouseover
+        }); // window.onload
+    </script>
+    
+</body>
+</html>

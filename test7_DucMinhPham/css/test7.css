@@ -1,0 +1,9 @@
+body {
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px 30px;
+    background-color: #AAF9AA;
+}
+h2 {
+    color: red;
+}

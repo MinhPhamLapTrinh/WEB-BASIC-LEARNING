@@ -1,0 +1,147 @@
+body {
+  /* background-color: wheat; */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-image: url(../media/photo-1514810771018-276192729582.jpeg);
+  background-size: cover;
+}
+h5 {
+  text-align: right;
+}
+header {
+  text-align: center;
+  text-shadow: 10px 10px 10px gray;
+  border: dotted orange 10px;
+  background-image: url(../media/chimney-home-icon-transparent-1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+h1 {
+  color: aquamarine;
+}
+.container {
+  clear: both;
+  display: block;
+  width: 80%;
+  margin: auto;
+  background-color: rgb(114, 113, 111);
+  color: rgb(196, 209, 12);
+  border: solid black 5px;
+  background-image: url(../media/seneca-logo.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  padding: 5px;
+}
+footer {
+  clear: both;
+  text-align: left;
+  color: white;
+  text-shadow: 5px 5px 5px gray;
+  padding: 5px;
+}
+
+.column1 {
+  width: 15%;
+  float: left;
+}
+.column2 {
+  width: 5%;
+  float: left;
+}
+.column3 {
+  width: 60%;
+  float: left;
+}
+.column4 {
+  width: 20%;
+  float: left;
+}
+nav {
+  text-align: left;
+  background-color: beige;
+  border: groove 10px;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  display: block;
+  background-color: beige;
+}
+nav ul li a {
+  background-color: beige;
+  color: black;
+  text-decoration: none; /* remove underline of hyperlink*/
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+nav ul li a:hover {
+  background-color: #222;
+  color: #fff;
+  font-size: larger;
+}
+#imgSizeHonest {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border: groove yellow 5px;
+  border-radius: 20%;
+}
+#imgSizeHonest:hover {
+  font-size: larger;
+    background-color: white;
+}
+a:hover {
+  font-size: large;
+}
+#saiGon {
+  background-image: url(../media/Saigon\ Lotus\ New\ Bi\ Logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+#imgSaiGon {
+  width: 300px;
+  height: 200px;
+  border: dotted purple 10px;
+  border-radius: 30%;
+}
+video {
+  width: 500px;
+  height: 300px;
+  border: groove yellow 8px;
+  border-left-color: blueviolet;
+  border-right-color: crimson;
+}
+hr {
+  clear: both;
+}
+table{
+  border: groove 10px;
+}
+tr, th {
+  border: groove 3px;
+}
+td {
+  border: groove 2px;
+}
+audio {
+  border: groove violet 10px;
+  border-radius: 40%;
+}
+#imgPodcast {
+  width: 100px;
+  height: 100px;
+  border: dotted pink 20px;
+  border-radius: 20%;
+}
+
+#imgHero {
+  width: 300px;
+  height: 200px;
+  border: dotted purple 10px;
+  border-radius: 30%;
+}

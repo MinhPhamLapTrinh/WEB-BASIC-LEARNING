@@ -1,0 +1,19 @@
+/* CSS COMMENT */
+/* External CSS file */
+/* CSS SYNTAX: Selector{property:value; property: 2: value 2,..}
+    selector: the element you want to apply styling, 
+    e.g.,body
+    property: background-color
+    value: pink
+*/
+body {
+  background-color: rgb(124, 187, 187);
+  text-align: center;
+}
+p {
+    color:blueviolet
+}
+h3 {
+   background-color: azure;
+   color:brown;
+}

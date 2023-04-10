@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <script src="../js/wk11.js"></script>
+</head>
+
+<body>
+    <h2>Client-side Validation</h2>
+    <form name="validForm" method="post" action="https://httpbin.org/post" onsubmit="return validPhone();">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+        <label for="phone">Phone:</label>
+        <input type="text" name="phone" id="phone" placeholder="enter 10 digits">
+        <span id="err_phone"></span>
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    <button onclick="getPhone();">Get Phone #</button>
+</body>
+
+</html>

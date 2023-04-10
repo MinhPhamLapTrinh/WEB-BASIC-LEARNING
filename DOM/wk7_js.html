@@ -1,0 +1,50 @@
+<!-- wk7_js.html
+        document.write()
+     create elements, innerHTML, add lists
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+        <meta charset="UTF-8">
+        <title>JavaScript in HTML</title>
+                <!-- External JavaScript -->
+                 <script src="js/displayDate.js"></script> 
+        <!-- <script>
+                function displayDate() {
+                document.querySelector("#demo").innerHTML = (new Date()).toLocaleString();
+                }
+        </script> -->
+</head>
+<body>
+        <!-- Inline JavaScript -->
+        <h2 onclick="alert('Embed JavaScript in HTML');"> Click to test JavaScript in HTML</h2>
+
+        <!-- Internal JavaScript -->
+        <script>
+                var d = new Date();
+                document.write("<h2> Hello Everyone from Internal JavScript!</h2> <p> Current time is: " + d.toLocaleString() +"</p>");
+
+                document.write("Document Title: "+ document.title +"<br>");
+                /* document.title= "New Title";
+                document.write("Document Title: "+ document.title +"<br>"); */
+                var x = 10;
+                x += 100;
+                document.write("Display to web: " + x);
+                document.write("<p> Display to web in markup:  <u>" + x + "</u> </p>");
+        </script>
+
+        <hr>
+        <p>Click the following Button to execute the displayDate() function.</p>
+  
+        <p id="demo"></p>
+        <button onclick="displayDate();">Show Current Time</button>
+        <br> <br>
+        <mark>
+        <script>		
+                var dt=new Date(document.lastModified);   
+                document.write('This page was last updated on '+dt.toLocaleString()) ;	
+        </script>
+        </mark>
+
+</body>
+</html>

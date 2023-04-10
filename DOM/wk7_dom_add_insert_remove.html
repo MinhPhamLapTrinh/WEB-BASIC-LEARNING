@@ -1,0 +1,26 @@
+<!-- A thorough example of adding elements, e.g., paragraph, list, table -->
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title> DOM Add Insert Remove </title> 
+        <meta charset="UTF-8">
+        <script src = "js/dom_add_insert_remove.js"> </script>
+    </head>
+    <body>
+        <div id="container">
+            
+        <h3> Have fun with DOM </h3>
+        <p id = "p1"> first paragraph </p>
+        <h3 id="h3"> Insert a new paragraph before this line </h3>
+        <p id="p2"> second paragraph</p>
+            
+    
+        <button onclick="insert();"> Insert a paragraph </button> 
+        <button onclick="add();"> Add a paragraph </button> <br>
+        <button onclick="remove();"> Remove a paragraph </button> <br>
+        <!-- change innerHTML, will not add more elements while clicking the button more -->
+        </div>
+        <hr>
+        <h3>something out of div</h3>
+    </body>
+</html>
